@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — Leimomi Bong</title>
+<meta name="robots" content="noindex">
+<script>
+  // The Catalyst moved from /the-catalyst/ to /catalyst/. Send old links,
+  // including episode pages, to the same page at the new address.
+  (function () {
+    var p = location.pathname;
+    if (p === "/the-catalyst" || p.indexOf("/the-catalyst/") === 0) {
+      location.replace("/catalyst" + p.slice("/the-catalyst".length) + location.search + location.hash);
+    }
+  })();
+</script>
+<style>
+  html, body { margin: 0; background: #d6e4f0; color: #24323f; font-family: "EB Garamond", Georgia, serif; }
+  main { padding: 24px; }
+  h1 { font-weight: 400; font-style: italic; font-size: 40px; margin: 14vh 0 12px; }
+  a { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; color: #24323f; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Page not found</h1>
+  <a href="/">naeolokani.com</a> · <a href="/catalyst/">The Catalyst</a>
+</main>
+</body>
+</html>
